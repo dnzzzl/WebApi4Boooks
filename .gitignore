@@ -1,13 +1,4 @@
 .vs
-appsettings*.json
-bin/**
-obj/**
-/BoooksUI/bin/Debug/net9.0
-/BoooksUI/obj
-/WebApi4Boooks/bin/Debug/net9.0
-/WebApi4Boooks/BoooksUI/obj
-/WebApi4Boooks/BoooksUI/obj/BoooksUI.csproj.nuget.dgspec.json
-/WebApi4Boooks/obj/Debug/net9.0
-/WebApi4Boooks/obj/Release/net9.0
-/WebApi4Boooks/obj
-/WebApi4Boooks/appsettings.json
+**/appsettings*.json
+**/bin/**
+**/obj/**

@@ -11,12 +11,15 @@ namespace BoooksUI.Controllers
     {
         private readonly HttpClient _httpClient;
         private readonly ILogger<BoooksController> _logger;
-        private readonly string _apiBaseUrl = "http://localhost:5044/api/Boooks"; // Adjust the port as needed
+        private readonly string _apiBaseUrl = ""; // Adjust the port as needed
+        private readonly IConfiguration _config;
 
-        public BoooksController(HttpClient httpClient, ILogger<BoooksController> logger)
+        public BoooksController(HttpClient httpClient, ILogger<BoooksController> logger, IConfiguration configuration)
         {
             _httpClient = httpClient;
             _logger = logger;
+            _config = configuration;
+            _apiBaseUrl = _config.GetValue<string>("BackendUrl") ?? "http://localhost:5044/api/Boooks";
         }
 
         // GET: BoooksController
