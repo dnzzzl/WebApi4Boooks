@@ -26,5 +26,20 @@ namespace WebApi4Boooks.Services
 
             return boooks ?? new List<Boook>();
         }
+
+        public async Task<Boook> GetBoookById(int id)
+        {
+
+            var response = await _httpClient.GetAsync($"Books/{id}");
+            response.EnsureSuccessStatusCode();
+            
+            var jsonString = await response.Content.ReadAsStringAsync();
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+            Boook boook = JsonSerializer.Deserialize<Boook>(jsonString, options);
+            return boook;
+        }
     }
 }

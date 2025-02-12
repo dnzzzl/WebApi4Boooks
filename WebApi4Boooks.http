@@ -1,6 +1,37 @@
 @WebApi4Boooks_HostAddress = http://localhost:5044
 
-GET {{WebApi4Boooks_HostAddress}}/weatherforecast/
+### Get all books
+GET {{WebApi4Boooks_HostAddress}}/api/Boooks
 Accept: application/json
 
-###
+### Get a book by ID
+GET {{WebApi4Boooks_HostAddress}}/api/Boooks/1
+Accept: application/json
+
+### Create a new book
+POST {{WebApi4Boooks_HostAddress}}/api/Boooks
+Content-Type: application/json
+
+{
+  "title": "New Book Title",
+  "author": "Author Name",
+  "publishedDate": "2025-02-11T00:00:00Z",
+  "excerpt": "new excerpt",
+  "description": "new description"
+}
+
+### Update a book by ID
+PUT {{WebApi4Boooks_HostAddress}}/api/Boooks/1
+Content-Type: application/json
+
+{
+  "title": "Updated Book Title",
+  "author": "Updated Author Name",
+  "publishedDate": "2025-02-11T00:00:00Z",
+  "excerpt": "updated excerpt",
+  "description": "updated description"
+}
+
+### DELETE a boook by ID
+DELETE {{WebApi4Boooks_HostAddress}}/api/Boooks/1
+
