@@ -1,0 +1,89 @@
+﻿@model WebApi4Boooks.Models.Boook
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">Editar Libro</h2>
+    <div class="card shadow-sm border-0">
+        <div class="card-body">
+            <form id="editBookForm">
+                <input type="hidden" asp-for="Id" id="bookId" />
+
+                <div class="mb-3">
+                    <label asp-for="Title" class="form-label">Title</label>
+                    <input asp-for="Title" class="form-control" id="title" required />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Description" class="form-label">Description</label>
+                    <textarea asp-for="Description" class="form-control" id="description" rows="3" required></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Excerpt" class="form-label">Excerpt</label>
+                    <textarea asp-for="Excerpt" class="form-control" id="excerpt" rows="2" required></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="PageCount" class="form-label">Page Count</label>
+                    <input asp-for="PageCount" type="number" class="form-control" id="pageCount" required />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="PublishDate" class="form-label">Publish Date</label>
+                    <input asp-for="PublishDate" type="date" class="form-control" id="publishDate" required />
+                </div>
+
+                <div class="text-end">
+                    <button type="button" id="saveChanges" class="btn btn-success">Save Changes</button>
+                    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    document.getElementById("saveChanges").addEventListener("click", function () {
+        Swal.fire({
+            title: "Seguro?",
+            text: "Guardar los cambios en el libro?",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#28a745",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Guardar"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                const bookData = {
+                    Id: document.getElementById("bookId").value,
+                    Title: document.getElementById("title").value,
+                    Description: document.getElementById("description").value,
+                    Excerpt: document.getElementById("excerpt").value,
+                    PageCount: document.getElementById("pageCount").value,
+                    PublishDate: document.getElementById("publishDate").value
+                };
+
+                fetch("@Url.Action("Editar")", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(bookData)
+                })
+                .then(data => {
+                    if (data.ok) {
+                        Swal.fire("Guardado!", "Respuesta Ok. Actualizado.", "success").then(() => {
+                            window.location.href = "@Url.Action("Index")";
+                        });
+                    } else {
+                        Swal.fire("Error!", "Something went wrong.", "error");
+                    }
+                });
+            }
+        });
+    });
+</script>

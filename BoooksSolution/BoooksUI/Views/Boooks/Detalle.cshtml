@@ -1,0 +1,53 @@
+﻿@model WebApi4Boooks.Models.Boook
+
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">@Model.Title</h2>
+    <div class="card shadow-sm border-0">
+        <div class="card-body">
+            <p class="text-muted small">Published on: @Model.PublishDate.ToString("yyyy-MM-dd")</p>
+            <p>@Model.Description</p>
+            <p class="fw-bold">Excerpt:</p>
+            <blockquote class="blockquote">@Model.Excerpt</blockquote>
+            <p class="text-muted">Page Count: @Model.PageCount</p>
+        </div>
+        <div class="card-footer bg-white border-0 text-end">
+            <a asp-action="Editar" asp-route-id="@Model.Id" class="btn btn-primary">Editar</a>
+            <button class="btn btn-danger" id="deleteButton">Borrar</button>
+            <a asp-action="Index" class="btn btn-secondary">Volver</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    document.getElementById("deleteButton").addEventListener("click", function () {
+        Swal.fire({
+            title: "Borrar el libro?",
+            text: "Mensaje de confirmacion",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#d33",
+            cancelButtonColor: "#3085d6",
+            confirmButtonText: "Si, borrar.",
+            cancelButtonText: "Cancelar."
+        }).then((result) => {
+            if (result.isConfirmed) {
+                fetch("@Url.Action("Delete", new { id = Model.Id })", { method: "POST" })
+                    .then(data => {
+                        if (data.ok) {
+                            Swal.fire("Listo!", "Respuesta Ok, libro borrado.", "success").then(() => {
+                                window.location.href = "@Url.Action("Index")";
+                            });
+                        } else {
+                            Swal.fire("Error", "Something went wrong.", "error");
+                        }
+                    });
+            }
+        });
+    });
+</script>
+

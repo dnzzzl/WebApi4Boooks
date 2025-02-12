@@ -1,0 +1,35 @@
+﻿@model List<WebApi4Boooks.Models.Boook>
+
+@{
+    ViewData["Title"] = "Lista de Libros";
+}
+
+<style>
+    .card:hover {
+        transform: scale(1.03);
+        transition: transform 0.3s ease-in-out;
+    }
+</style>
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">Lista De Libros</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        @foreach (var boook in Model)
+        {
+            <div class="col">
+                <a asp-action="Detalle" asp-route-id="@boook.Id" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">@boook.Title</h5>
+                            <p class="card-text text-muted small">Published on: @boook.PublishDate.ToString("yyyy-MM-dd")</p>
+                            <p class="card-text">@boook.Description</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 text-end">
+                            <small class="text-muted">@boook.PageCount pages</small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+</div>
