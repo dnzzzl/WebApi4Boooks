@@ -3,3 +3,6 @@
 **/bin/**
 **/obj/**
 /BoooksSolution/BoooksUI/Properties/PublishProfiles
+BoooksSolution/BoooksUI/obj/Debug/net9.0/BoooksUI.AssemblyInfo.cs
+BoooksSolution/BoooksUI/obj/Debug/net9.0/BoooksUI.AssemblyInfoInputs.cache
+BoooksSolution/BoooksUI/obj/Debug/net9.0/BoooksUI.csproj.AssemblyReference.cache
