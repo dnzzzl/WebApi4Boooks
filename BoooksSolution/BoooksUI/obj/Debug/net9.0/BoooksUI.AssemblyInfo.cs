@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BoooksUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f25d00f088f15e05d208a045e36e0a21a89a4cfb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aeaa1d5c9a6b0bb7dec70f2901be622407d521d6")]
 [assembly: System.Reflection.AssemblyProductAttribute("BoooksUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BoooksUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
