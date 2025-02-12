@@ -10,3 +10,4 @@ obj/**
 /WebApi4Boooks/obj/Debug/net9.0
 /WebApi4Boooks/obj/Release/net9.0
 /WebApi4Boooks/obj
+/WebApi4Boooks/appsettings.json

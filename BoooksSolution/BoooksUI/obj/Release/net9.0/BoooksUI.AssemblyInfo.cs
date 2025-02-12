@@ -13,7 +13,7 @@ using System.Reflection;
 
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("ca3136cb-d38b-4e3d-ba07-1154bb33fae6")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("BoooksUI")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f25d00f088f15e05d208a045e36e0a21a89a4cfb")]
 [assembly: System.Reflection.AssemblyProductAttribute("BoooksUI")]

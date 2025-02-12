@@ -100,10 +100,6 @@ C:\Users\gatewin\source\repos\BoooksSolution\BoooksUI\obj\Debug\net9.0\BoooksUI.
 C:\Users\gatewin\source\repos\BoooksSolution\BoooksUI\obj\Debug\net9.0\BoooksUI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\gatewin\source\repos\BoooksSolution\BoooksUI\bin\Debug\net9.0\WebApi4Boooks.deps.json
 C:\Users\gatewin\source\repos\BoooksSolution\BoooksUI\bin\Debug\net9.0\WebApi4Boooks.runtimeconfig.json
-C:\Users\gatewin\source\repos\BoooksSolution\BoooksUI\bin\Debug\net9.0\BoooksUI\obj\BoooksUI.csproj.nuget.dgspec.json
-C:\Users\gatewin\source\repos\BoooksSolution\BoooksUI\bin\Debug\net9.0\BoooksUI\obj\project.assets.json
-C:\Users\gatewin\source\repos\BoooksSolution\BoooksUI\bin\Debug\net9.0\WebApi4Boooks\appsettings.Development.json
-C:\Users\gatewin\source\repos\BoooksSolution\BoooksUI\bin\Debug\net9.0\WebApi4Boooks\appsettings.json
 C:\Users\gatewin\source\repos\BoooksSolution\BoooksUI\bin\Debug\net9.0\WebApi4Boooks.staticwebassets.endpoints.json
 C:\Users\gatewin\source\repos\BoooksSolution\BoooksUI\bin\Debug\net9.0\WebApi4Boooks.exe
 C:\Users\gatewin\source\repos\BoooksSolution\BoooksUI\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
@@ -111,3 +107,4 @@ C:\Users\gatewin\source\repos\BoooksSolution\BoooksUI\bin\Debug\net9.0\Microsoft
 C:\Users\gatewin\source\repos\BoooksSolution\BoooksUI\bin\Debug\net9.0\WebApi4Boooks.dll
 C:\Users\gatewin\source\repos\BoooksSolution\BoooksUI\bin\Debug\net9.0\WebApi4Boooks.pdb
 C:\Users\gatewin\source\repos\BoooksSolution\BoooksUI\obj\Debug\net9.0\BoooksUI.csproj.Up2Date
+C:\Users\gatewin\source\repos\BoooksSolution\BoooksUI\obj\Debug\net9.0\BoooksUI.sourcelink.json

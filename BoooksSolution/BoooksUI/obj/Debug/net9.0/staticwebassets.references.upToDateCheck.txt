@@ -24,3 +24,6 @@ C:\Users\gatewin\source\repos\WebApi4Boooks\obj\Debug\net9.0\staticwebassets.bui
 C:\Users\gatewin\source\repos\WebApi4Boooks\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\gatewin\source\repos\WebApi4Boooks\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\gatewin\source\repos\WebApi4Boooks\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\gatewin\source\repos\WebApi4Boooks\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\gatewin\source\repos\WebApi4Boooks\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\gatewin\source\repos\WebApi4Boooks\obj\Debug\net9.0\staticwebassets.build.json
