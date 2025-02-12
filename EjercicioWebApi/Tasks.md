@@ -1,0 +1,18 @@
+- [x] Initialize a Web Api Project and get Familiar.  30min.
+- [x] Create Domain Models
+	- [x] Boooks
+	- [ ] Authors (extra, not needed)
+	- [ ] Users (extra, not needed)
+- [x] Create Controllers
+- [x] Add All Endpoints
+	- [x] Get Books
+	- [x] Get Books/{id}
+	- [x] Post Book
+	- [x] Put book/{id}
+	- [x] Delete boook/{id}
+- [x] Create HttpClient Service
+- [x] Extraer el link del backend hacia configuracion en BoooksUI
+- [x] Escribir Readme
+- [x] Subir a github
+- [x] Confirmar pasos de ejecucion 
+- [ ] Opcional: Hosting.
